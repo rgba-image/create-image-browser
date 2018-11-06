@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>create-image-browser tests</title>
+<link href="https://unpkg.com/mocha@5.2.0/mocha.css" rel="stylesheet">
+
+<body>
+  <div id="mocha"></div>
+  <script src="https://unpkg.com/mocha@5.2.0/mocha.js"></script>
+  <script>mocha.setup( 'bdd' )</script>
+  <script src="browser.js"></script>
+  <script>
+    mocha.checkLeaks()
+    mocha.run()
+  </script>
+</body>
